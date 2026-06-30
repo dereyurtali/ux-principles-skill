@@ -50,17 +50,17 @@ heavier reference files are pulled in only when a task needs them.
 Copy the skill folder into your Claude Code skills directory:
 
 ```bash
-git clone https://github.com/dereyurtali/ux-principles.git
+git clone https://github.com/dereyurtali/ux-principles-skill.git
 # user-level (available in all your projects):
 mkdir -p ~/.claude/skills
-cp -R ux-principles/skills/ux-principles ~/.claude/skills/
+cp -R ux-principles-skill/skills/ux-principles ~/.claude/skills/
 ```
 
 Or install it **per project** so your whole team gets it via version control:
 
 ```bash
 mkdir -p /path/to/your-project/.claude/skills
-cp -R ux-principles/skills/ux-principles /path/to/your-project/.claude/skills/
+cp -R ux-principles-skill/skills/ux-principles /path/to/your-project/.claude/skills/
 ```
 
 Restart Claude Code (or start a new session) and the skill will be auto-discovered.
@@ -68,7 +68,7 @@ Restart Claude Code (or start a new session) and the skill will be auto-discover
 ### Option B — as a plugin (via marketplace)
 
 ```text
-/plugin marketplace add dereyurtali/ux-principles
+/plugin marketplace add dereyurtali/ux-principles-skill
 /plugin install ux-principles@ux-principles
 ```
 

@@ -1,11 +1,11 @@
 {
-  "name": "ux-principles",
+  "name": "ux-principles-skill",
   "owner": {
     "name": "dereyurtali"
   },
   "plugins": [
     {
-      "name": "ux-principles",
+      "name": "ux-principles-skill",
       "source": "./",
       "description": "Practical UX, interaction-design, and visual-design principles for Claude to apply when building or reviewing user interfaces."
     }

@@ -1,5 +1,5 @@
 ---
-name: ux-principles
+name: ux-principles-skill
 description: >-
   Apply established UX, interaction-design, and visual-design principles when
   designing, building, or reviewing any user-facing interface or flow. Use when

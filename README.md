@@ -28,7 +28,7 @@ When the skill is active, Claude will, for any user-facing work:
 ## What's inside
 
 ```
-skills/ux-principles/
+skills/ux-principles-skill/
 ├── SKILL.md                         # entry point: when/how to use + core defaults
 └── references/
     ├── design-principles.md         # Gestalt, Fitts, Hick, hierarchy, progressive disclosure
@@ -53,14 +53,14 @@ Copy the skill folder into your Claude Code skills directory:
 git clone https://github.com/dereyurtali/ux-principles-skill.git
 # user-level (available in all your projects):
 mkdir -p ~/.claude/skills
-cp -R ux-principles-skill/skills/ux-principles ~/.claude/skills/
+cp -R ux-principles-skill/skills/ux-principles-skill ~/.claude/skills/
 ```
 
 Or install it **per project** so your whole team gets it via version control:
 
 ```bash
 mkdir -p /path/to/your-project/.claude/skills
-cp -R ux-principles-skill/skills/ux-principles /path/to/your-project/.claude/skills/
+cp -R ux-principles-skill/skills/ux-principles-skill /path/to/your-project/.claude/skills/
 ```
 
 Restart Claude Code (or start a new session) and the skill will be auto-discovered.
@@ -69,7 +69,7 @@ Restart Claude Code (or start a new session) and the skill will be auto-discover
 
 ```text
 /plugin marketplace add dereyurtali/ux-principles-skill
-/plugin install ux-principles@ux-principles
+/plugin install ux-principles-skill@ux-principles-skill
 ```
 
 ## Usage
@@ -77,14 +77,14 @@ Restart Claude Code (or start a new session) and the skill will be auto-discover
 You usually don't need to do anything — Claude activates the skill automatically when you
 work on UI/UX. You can also nudge it explicitly:
 
-- *"Build the settings screen — apply the ux-principles skill."*
+- *"Build the settings screen — apply the ux-principles-skill skill."*
 - *"Review this component for usability and accessibility."*
 - *"Propose a few layout options for this dashboard before coding."*
 
 ## Verifying it's installed
 
 In Claude Code, run `/skills` (or ask "what skills do you have?"). You should see
-**ux-principles** listed.
+**ux-principles-skill** listed.
 
 ## Contributing
 

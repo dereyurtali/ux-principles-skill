@@ -1,7 +1,7 @@
 {
   "name": "ux-principles-skill",
-  "version": "1.0.0",
-  "description": "Practical UX, interaction-design, and visual-design principles for Claude to apply when building or reviewing user interfaces. Grounded in Norman, Cooper, Lidwell, Lupton, Buxton, Preece & Rogers, and Moggridge.",
+  "version": "3.0.0",
+  "description": "Practical UX, interaction-design, and visual-design principles for Claude to design, build, and review user interfaces. Seven reference files distill and cite foundational books — Norman (Design of Everyday Things), Cooper (About Face), Lidwell (Universal Principles of Design), Lupton (Thinking with Type), Buxton (Sketching User Experiences), Preece/Rogers/Sharp (Interaction Design), and Moggridge (Designing Interactions) — teaching each author's exact vocabulary, rules, and numbers rather than generic advice.",
   "author": {
     "name": "dereyurtali"
   },
@@ -16,6 +16,10 @@
     "accessibility",
     "interaction-design",
     "typography",
-    "heuristics"
+    "heuristics",
+    "personas",
+    "gestalt",
+    "sketching",
+    "wcag"
   ]
 }

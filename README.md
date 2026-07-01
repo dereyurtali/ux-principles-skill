@@ -4,9 +4,12 @@ A [Claude Code](https://claude.com/claude-code) **skill** that gives Claude prac
 opinionated UX, interaction-design, and visual-design knowledge to use while building and
 reviewing user interfaces.
 
-It distills ideas from seven classic design books into actionable rules, checklists, and
-review heuristics — so that when Claude writes UI code or audits a screen, it applies proven
-design thinking instead of guessing.
+It distills seven classic design books into actionable rules, checklists, and review
+heuristics — so that when Claude **designs an interface from scratch**, writes UI code, or
+audits a screen, it applies proven design thinking instead of guessing. Each reference file is
+grounded in a specific book and teaches that author's **exact vocabulary, rules, numbers, and
+examples** — so Claude applies the *named* concept correctly (a "sovereign posture," a "Gulf of
+Evaluation," a "river" in justified text) rather than asserting taste.
 
 > Sources behind the skill: Don Norman's design principles, Alan Cooper's *About Face*
 > (goal-directed design), Lidwell/Holden/Butler's *Universal Principles of Design*, Ellen
@@ -17,31 +20,48 @@ design thinking instead of guessing.
 
 When the skill is active, Claude will, for any user-facing work:
 
-- Design for **user goals**, not just features, and remove unnecessary busywork.
+- Design for **user goals**, not just features or tasks, and remove unnecessary busywork (**excise**).
+- Match the user's **mental model** and close Norman's **Gulfs of Execution and Evaluation**.
+- Choose the right **posture** (sovereign / transient / daemonic) for how the product is used.
+- Apply **visual hierarchy and grouping** using Gestalt and layout laws (Fitts, Hick, signal-to-noise, 7±2).
+- Use **readable, accessible typography** with real rules — measure, leading, alignment, hierarchy.
 - Always show **system status** and design **every UI state** (empty, loading, error, success…).
-- Apply **visual hierarchy, grouping, and spacing** using Gestalt and layout laws.
-- Use **readable, accessible typography** with sane defaults.
-- **Prevent and forgive errors**, prefer undo over destructive confirms.
-- Review interfaces against **usability heuristics** and **accessibility** checklists.
+- **Prevent and forgive errors** — constrain inputs, prefer undo over destructive confirms, never blame the user.
+- **Explore alternatives** cheaply before committing — "get the *right* design before getting the design right."
+- Review interfaces against **Nielsen's heuristics**, **Shneiderman's rules**, and **WCAG (POUR)** accessibility.
 - Avoid **dark patterns** and flag them when asked to build one.
 
 ## What's inside
 
+Each reference file distills one (or two) of the source books:
+
 ```
 skills/ux-principles-skill/
-├── SKILL.md                         # entry point: when/how to use + core defaults
+├── SKILL.md                          # entry point: when/how to use, routing, core defaults
 └── references/
-    ├── design-principles.md         # Gestalt, Fitts, Hick, hierarchy, progressive disclosure
-    ├── interaction-design.md        # affordances, feedback, mental models, perceived perf
-    ├── goal-directed-design.md      # goals vs tasks, personas, scenarios, postures, excise
-    ├── typography.md                # measure, leading, scale, responsive & accessible type
-    ├── process-and-sketching.md     # explore alternatives, fidelity ladder, design all states
-    └── usability-heuristics.md      # review toolkit: heuristics, a11y, forms, severity, report
-summaries/                           # detailed (Turkish) summaries of the source books
+    ├── design-of-everyday-things.md  # Norman — affordances/signifiers, mapping, feedback,
+    │                                 #   conceptual models, the two Gulfs, constraints, error
+    ├── goal-directed-design.md       # Cooper (About Face) — goals vs tasks, personas,
+    │                                 #   scenarios, requirements, postures, flow, excise
+    ├── design-principles.md          # Lidwell (Universal Principles) — ~50 UI laws: Gestalt,
+    │                                 #   Fitts, Hick, 7±2, signal-to-noise, 80/20, progressive disclosure
+    ├── typography.md                 # Lupton (Thinking with Type) — anatomy, measure, leading,
+    │                                 #   alignment, rivers/widows/orphans, grids, punctuation (+ CSS)
+    ├── interaction-design-process.md # Preece/Rogers/Sharp + Moggridge — usability goals, Double
+    │                                 #   Diamond, interaction types, prototyping, evaluation
+    ├── sketching-and-ideation.md     # Buxton — right design vs design right, sketch vs prototype,
+    │                                 #   the design funnel, ideation methods (10+10, storyboards…)
+    └── usability-heuristics.md       # review toolkit — Nielsen 10, Shneiderman 8, WCAG POUR,
+                                      #   severity ratings, finding-report format
+summaries/                            # longer (Turkish) chapter summaries of the source books
 ```
 
 The skill uses **progressive disclosure**: `SKILL.md` is short and always loaded; the
 heavier reference files are pulled in only when a task needs them.
+
+> **Note on sources.** The original books are copyrighted and are **not** included in this
+> repo — only the distilled reference files ship. The references synthesize and cite the books;
+> they do not reproduce their text.
 
 ## Installation
 

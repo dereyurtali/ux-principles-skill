@@ -11,3 +11,11 @@ Thumbs.db
 *.log
 .tmp/
 scratchpad/
+
+# Source books — copyrighted, must NEVER be committed.
+# The skill ships only the distilled .md references, not the books themselves.
+*.pdf
+*.epub
+*.mobi
+*.azw
+*.azw3
